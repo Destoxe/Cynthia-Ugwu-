@@ -264,7 +264,9 @@ html,body {
 
 }
 
-@media (max-width: 700px) {
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
 
     html,body {
         width: 100%;
@@ -274,9 +276,9 @@ html,body {
     #minicircle { 
         opacity: 0;
     }
-    
+
     #heading {
-        font-size: 50px;
+        font-size: 20vw;
     }
 
     .blocktex h5 {
