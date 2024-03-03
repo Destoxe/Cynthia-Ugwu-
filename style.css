@@ -27,7 +27,7 @@ html,body {
 }
 
 .bounding .boundingelem {
-    transform: translateY(100%);
+    transform: translateY(900%);
 }
 
 #main {
@@ -93,9 +93,9 @@ html,body {
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-top: 70px;
-    margin-right: 50px;
-    margin-bottom: 20px;
+    margin-top: 10vw;
+    margin-right: 3vw;
+    margin-bottom: 2vw;
 }
 
 #lilheadings h5 {
@@ -266,18 +266,14 @@ html,body {
 
 @media only screen 
 and (min-device-width: 320px)
-and (max-device-width: 480px) {
-
-    html,body {
-        width: 100%;
-        height: 100%;
-    }
+and (max-device-width: 700px) {
 
     #minicircle { 
         opacity: 0;
     }
 
     #heading {
+        margin-top: 20%;
         font-size: 20vw;
     }
 
@@ -332,8 +328,6 @@ and (max-device-width: 480px) {
     #textabout p {
         line-height: 1.2;
         font-size: 13px;
-
-
     }
 
     #subscribe h4 {
