@@ -275,6 +275,7 @@ and (max-device-width: 700px) {
     #heading {
         margin-top: 20%;
         font-size: 20vw;
+        font-weight:400;
     }
 
     .blocktex h5 {
@@ -286,6 +287,12 @@ and (max-device-width: 700px) {
         margin-top: 250px;
         
     }
+
+    /* #second img {
+        opacity: 0;
+        display: none;
+        overflow: hidden;
+    } */
 
     #lilheadings h5 {
         font-size: 8px;
@@ -308,6 +315,8 @@ and (max-device-width: 700px) {
 
     .elem img {
         display: none;
+        overflow: hidden;
+
     }
 
     #about {
@@ -321,13 +330,14 @@ and (max-device-width: 700px) {
 
     #about img {
        /* position: relative; */
-       height: 150px;
-       width: 150px;
+       height: 100px;
+       width: 100px;
     }
 
     #textabout p {
         line-height: 1.2;
         font-size: 13px;
+
     }
 
     #subscribe h4 {
