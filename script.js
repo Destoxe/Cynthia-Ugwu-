@@ -109,3 +109,30 @@ document.addEventListener("DOMContentLoaded", function() {
         minicircle.style.display = "none";
     });
 });
+
+function updateDateTime() {
+    let date = new Date();
+
+    document.getElementById("year").textContent = date.getFullYear();
+
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+
+    let ampm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+
+    minutes = ("0" + minutes).slice(-2);
+    seconds = ("0" + seconds).slice(-2);
+
+    let timeString = hours + ":" + minutes + ":" + seconds + " " + ampm + " EST";
+
+    document.getElementById("time").innerHTML = timeString;
+
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+
